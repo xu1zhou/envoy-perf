@@ -1,0 +1,12 @@
+remote: false
+dockerizedBenchmark: true
+environment:
+  outputDir: '/home/ubuntu/nighthawk_output'
+  testDir: '/home/ubuntu/nighthawk_tests'
+  testVersion: IPV_V4ONLY
+  envoyPath: 'envoy'
+images:
+  reuseNhImages: true
+  nighthawkBenchmarkImage: 'envoyproxy/nighthawk-benchmark-dev:latest'
+  nighthawkBinaryImage: 'envoyproxy/nighthawk-dev:latest'
+  envoyImage: "envoyproxy/envoy:v1.21.0"
